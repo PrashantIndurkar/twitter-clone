@@ -16,10 +16,10 @@ import {
 const Sidebar = () => {
 	return (
 		<div className="hidden sm:flex flex-col items-center xl:items-start xl:w-[340px] p-2 sm:py-2 sm:px-0 fixed h-full">
-			<div className="flex items-center justify-center w-14 h-14 hoverAnimation p-0 xl:ml-24 ">
+			<div className="mb-5 flex items-center justify-center w-14 h-14 hoverAnimation p-0 xl:ml-24 ">
 				<Image src="https://rb.gy/ogau5a" width={30} height={30} />
 			</div>
-			<div className="space-y-2 xl:space-y-1 xl:mt-0  xl:ml-24">
+			<div className="space-y-2 xl:space-y-4 xl:mt-0  xl:ml-24">
 				<SidebarLink text="Home" Icon={HomeIcon} active />
 				<SidebarLink text="Explore" Icon={HashtagIcon} />
 				<SidebarLink text="Notifications" Icon={BellIcon} />
@@ -28,15 +28,15 @@ const Sidebar = () => {
 				<SidebarLink text="Lists" Icon={ClipboardListIcon} />
 				<SidebarLink text="Profile" Icon={UserIcon} />
 				<SidebarLink text="More" Icon={DotsCircleHorizontalIcon} />
-				<button className="hidden xl:inline ml-auto bg-[#1d9bf0] text-white rounded-full w-36 h-[52px] text-base font-bold shadow-md hover:bg-[#1a8cd8]">
-					Tweet
-				</button>
 			</div>
+			<button className="hidden xl:inline ml-auto mt-2 bg-[#1d9bf0] text-white rounded-full w-36 h-[52px] text-base font-bold shadow-md hover:bg-[#1a8cd8]">
+				Tweet
+			</button>
 			<div className="xl:ml-auto xl:-mr-5 text-[#d9d9d9] flex items-center justify-center hoverAnimation mt-auto mb-3">
 				<img
-					src="https://lh3.googleusercontent.com/a-/AOh14Gg2ZhrTdy9DhfADuCdVFdusR1ajxjPWV0uiuCbbE80=s100"
+					src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-superJumbo-v4.jpg"
 					alt="profile"
-					className="h-9 w-9 sm:h-6 sm:w-6 rounded-full "
+					className="h-9 w-9 sm:h-6 sm:w-6 xl:mr-2.5 rounded-full "
 				/>
 				<div className="hidden xl:inline leading-5 mx-3">
 					<h4 className="font-semibold text-sm">Prashant </h4>
